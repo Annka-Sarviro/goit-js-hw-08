@@ -10,9 +10,9 @@ const setForm = function() {
     const parsedForm = JSON.parse(localStorage.getItem(LOCAL_KEY));
         
         
- if (userForm ) {
-            formEl.elements.email.value = userForm.email.value;
-            formEl.elements.message.value = userForm.message.value;
+ if (userForm) {
+            formEl.elements.email.value = parsedForm.email;
+            formEl.elements.message.value = parsedForm.message;
             
             }
     }
@@ -24,8 +24,7 @@ const clearMessage = function(event) {
     formEl.reset();
 }
 
-const onFormSetLocal = function (event) {
-    
+const onFormSetLocal = function (event) {    
     userForm[event.target.name] = event.target.value;   
     localStorage.setItem(LOCAL_KEY, JSON.stringify(userForm))
     
