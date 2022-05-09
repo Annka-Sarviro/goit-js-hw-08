@@ -2,7 +2,7 @@
   "name": "parcel-project-template",
   "version": "1.1.0",
   "description": "",
-  "main": "index.html",
+  "main": "index.js",
   "homepage": "https://annka-sarviro.github.io/goit-js-hw-08/",
   "scripts": {
     "dev": "parcel src/*.html",
@@ -29,6 +29,7 @@
     "@vimeo/player": "^2.16.4",
     "lodash": "^4.17.21",
     "lodash.throttle": "^4.1.1",
+    "simple-lightbox": "^2.1.0",
     "simplelightbox": "^2.10.3"
   }
 }
